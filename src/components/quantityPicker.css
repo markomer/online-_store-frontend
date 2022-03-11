@@ -1,0 +1,16 @@
+.quantitPicker label,  .quantitPicker button{
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.quantityLabel{
+  margin: 5px;
+}
+
+.btn.btn-info.btn-sm {
+  color: white;
+  background-color: rgb(164, 76, 247);
+  border-color: rgb(164, 76, 247);
+  font-size: larger;
+  font-weight: 700;
+}
