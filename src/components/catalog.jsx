@@ -18,6 +18,7 @@ const Catalog = () => {
     loadCatalog();
   } );
 
+  
   return (<div className='catalog'>
             <h1>Check out our amazing catalog of art products!</h1>
             <h2>We have {products.length} different products!!</h2>
