@@ -1,7 +1,7 @@
 .product {
   border: 1px solid black;
   display: inline-block;
-  margin: 5px;
+  margin: 10px;
   padding: 5px;
   color: darkcyan;
   border-radius: 5px;
@@ -12,10 +12,26 @@
   display: block;
 }
 
+.product img {
+  max-height: 400px;
+}
+
 .addBtn {
   color: white;
   background-color: rgb(27, 160, 160);
-  margin: 5px;
+  margin: 5px 0 15px 0;
   font-weight: 500;
   border-color: rgb(27, 160, 160);
+}
+h5{
+  padding: 5px;
+}
+
+.price{
+  color: black;
+}
+
+.total{
+  color: black;
+  margin: 0 0 5px 0;
 }

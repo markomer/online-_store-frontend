@@ -1,8 +1,4 @@
-.navBar{
-  background-color: aquamarine;
-  padding: 1px;
-}
 
-.navBar h2{
-  color: rgb(138, 43, 226);
+.navbar.navbar-expand-lg.navbar-light{
+  background-color: rgb(90, 207, 188);
 }
