@@ -1,0 +1,14 @@
+.prod-cart {
+  display: flex;
+  flex-direction: row;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  padding: 0 10px 0 10px;
+}
+
+.info h6 {
+  
+}

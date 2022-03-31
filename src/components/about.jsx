@@ -23,7 +23,7 @@ const About = () => {
       <h1>My Online Store</h1>
       <h5>Created by: Mark Omer</h5>
 
-      <button onClick={exercise}>Do the magic!</button>
+      <button onClick={exercise} className="magic-btn">Do the magic!</button>
     </div>
   );
 };
