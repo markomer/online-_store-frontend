@@ -16,7 +16,7 @@
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   border: 7px solid darkcyan;
   border-radius: 10px;
-  width: 50%;
+  min-width: 50%;
   padding: 10px 15px 25px 10px;
 
 
