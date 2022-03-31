@@ -5,6 +5,7 @@ const ProductInCart = (props) => {
 
   return (
     <div className="prod-cart">
+      
       <img className="cartImage" src={"/imgs/"+props.data.image} alt="product iamge"></img>
 
       <div className="info">
@@ -17,13 +18,6 @@ const ProductInCart = (props) => {
       <label className="total">total??</label>
       <button className="btn btn-sm btn-danger">Remove</button>
 
-
-
-      <h6>{props.data.price}</h6>
-
-      <h6>{props.data.quantity}</h6>
-      <h6>{props.data.total}</h6>
-      <h6>{props.data.bucket}</h6>
     </div>
   );
 };
