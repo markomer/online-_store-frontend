@@ -4,10 +4,8 @@ register a menu item for item
 
 Form: title image price category buttontosave buttontoclear**/
 
-// change check 
-
 import "./admin.css";
-import {useState, useEffect} from 'react';
+import {useState} from 'react';
 import DataService from "../services/dataService";
 
 
@@ -46,25 +44,11 @@ const Admin = () => {
 
   };
 
-  const loadCoupons = async() => {
-    let service = new DataService();
-    let all = await service.getCoupons();
-    setAllCoupons(all);
-  };
-
-  // when the comp. loads...
-  useEffect(() =>{
-    loadCoupons();
-  }, []);
-
-  const saveCoupon = async () => {
+  const saveCoupon = () => {
     console.log(coupon);
 
-    let fixed = {...coupon};
-    fixed.discount = parseInt(coupon.discount); //change the discount to integer
-    console.log(fixed)
     let service = new DataService();
-    let resp = await service.saveCouponCode(fixed);
+    service.saveCouponCode(coupon);
 
     // add it to the allCoupons
     let copy = [ ...allCoupons ];
@@ -142,7 +126,7 @@ const Admin = () => {
         <div className="coupon-list">
           {allCoupons.map((coupon, index) => (
             <div key={index}>
-              <label>{coupon.code}</label> - <label>{coupon.discount}</label> %<label></label>
+              <label>{coupon.code}</label> - <label>{coupon.discount}</label>
             </div> 
           ))}
         </div>

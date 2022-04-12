@@ -1,5 +1,3 @@
-import axios from 'axios';
-
 var catalog = [ // faking the data - fake server
   {
     _id: "emroone",
@@ -95,32 +93,18 @@ var catalog = [ // faking the data - fake server
 
 
 class DataService{
-  async getCatalog(){
+  getCatalog(){
     // This method should retrieve data from the server
     // Save the.. var catalog = request();
-    // do the magic to connect to server
-    // and retrieve the catalog
-    let resp = await axios.get("http://127.0.0.1:5000/api/catalog")
-    return resp.data;
-
-    // return mock data
-    // return catalog;
-  }
-
-  async getCoupons() {
-    // call server
-    let resp = await axios.get("http://127.0.0.1:5000/api/couponCode")
-    return resp.data;
+    return catalog;
   }
 
   saveProduct(prod) {
     console.log("Sending prod to server,,,,,,,,NOT")
   }
 
-  async saveCouponCode(code) {
-    let resp = await axios.post("http://127.0.0.1:5000/api/couponCode", code);
-    return resp.data;
-    // console.log("Sending cc to server,,,,,,,,NOT")
+  saveCouponCode(code) {
+    console.log("Sending cc to server,,,,,,,,NOT")
   }
 
 }
